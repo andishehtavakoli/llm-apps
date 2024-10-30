@@ -29,7 +29,6 @@ def process_message(message):
     """Process messages where the bot is mentioned."""
     reply_to_message = message.reply_to_message
     message_text = get_message_content(message.chat.id, reply_to_message.message_id)
-    print(message_text)
     waiting_message = send_telegram_message(
         bot,
         message.chat.id,

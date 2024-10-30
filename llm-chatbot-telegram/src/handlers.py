@@ -26,7 +26,6 @@ def handle_welcome(message):
 def handle_message(message):
     """Handle incoming messages."""
     if is_actionable_message(message):
-        print(message)
         process_message(message)
         
         

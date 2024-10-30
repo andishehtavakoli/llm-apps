@@ -3,7 +3,7 @@ from pathlib import Path
 WELCOME_MESSAGE = "👋 سلام به ربات سوالات متداول پایتوپیا خوش آمدید 🤖🎉"
 WAITING_MESSAGE = "💡 ربات در حال جستجوی پاسخ شماست..."
 
-CONTEXT = Path("/Users/andishehtavakoli/Documents/github-project/llm-apps/llm-chatbot-telegram/src/context.txt").read_text()
+CONTEXT = Path('src/context.txt').read_text()
 
 LLM_MODEL = "gpt-4o"
 SYSTEM_PROMPT = f"""You are a helpful assistant.
@@ -26,3 +26,5 @@ REPLY_SYSTEM_PROMPT = SYSTEM_PROMPT + """
 Answer the following question according to the guideline.
 Guideline: {reply_guideline}
 """
+
+# print(Path('.').resolve())
